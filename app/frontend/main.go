@@ -32,6 +32,7 @@ func main() {
 		fmt.Fprintf(w, "200 OK\n")
 	})
 
+	// dummy
 	http.HandleFunc("/backend", func(w http.ResponseWriter, r *http.Request) {
 		backend := os.Getenv("BACKEND_FQDN")
 		id := r.FormValue("id")
